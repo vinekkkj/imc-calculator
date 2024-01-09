@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    background-color: #090e22;
+    box-shadow: 135px 136px 235px -38px rgba(27,41,189,0.56) inset;
+-webkit-box-shadow: 135px 136px 235px -38px rgba(27,41,189,0.56) inset;
+-moz-box-shadow: 135px 136px 235px -38px rgba(27,41,189,0.56) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: rgba(201, 203, 223, 0.144);
+    padding: 2rem;
+    box-shadow: 1px 0px 102px -6px rgba(0,0,0,0.2) inset;
+-webkit-box-shadow: 1px 0px 102px -6px rgba(0,0,0,0.70) inset;
+-moz-box-shadow: 1px 0px 102px -6px rgba(0,0,0,0.150) inset;
+}
+
+button {
+    flex: 1;
+}
+
+/* IMC Form */
+#calc-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0,6rem;
+    color: #fff;
+}
+
+.form-control input {
+    padding: 1rem 0.5rem;
+}
+
+.action-control {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 2rem; 
+    gap: 1rem;
+}
+
+/* Calculate Btn */
+#calc-btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+  #calc-btn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+  
+  #calc-btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  #calc-btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  /* Clear Button */
+  #clear-btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ff9191;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: sticky;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+
+  #clear-btn:hover {
+    transition: 1s ease-in-out;
+    background: #da4f4f;
+  }
+  
+  #clear-btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  #clear-btn span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  /* Back Button */
+  #back-btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ff9191;
+    outline: none;
+    transition: 1s ease-in-out;
+    margin-left: 5rem;
+  }
+
+  #back-btn:hover {
+    transition: 1s ease-in-out;
+    background: #da4f4f;
+  }
+  
+  #back-btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  #back-btn span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  
+  /* Table */
+  #result-container {
+    display: flex;
+    text-align: center;
+  }
+  
+  #imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  #imc-info {
+    font-size: 1.4rem;
+    color: #ccc;
+  }
+  
+  #result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+  }
+  
+  #result-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+  }
+  
+  .table-header {
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  .table-header,
+  .table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+    text-align: center;
+  }
+  
+  .table-header h4,
+  .table-data p {
+    flex: 1;
+  }
+  
+  .table-header h4:nth-child(3),
+  .table-data p:nth-child(3) {
+    max-width: 100px;
+  }
+  
+  .good {
+    color: #12db34;
+  }
+  
+  .low {
+    color: #dbce12;
+  }
+  
+  .medium {
+    color: #db6212;
+  }
+  
+  .high {
+    color: #db1912;
+  }
